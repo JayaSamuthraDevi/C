@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+void main()
+{
+int n;
+scanf("%d",&n);
+
+if(n%2==0)
+{
+int k=n/2;
+for(int i=1;i<k;i++)
+{
+printf("%d %d",i,-i);
+}
+printf(" 0 %d",n);
+}
+if(n%2!=0)
+{
+int k=n%2;
+for(int i=1;i<=k;i++)
+{
+printf("%d %d",i,-i);
+}
+printf(" %d",n);
+}
+}
